@@ -1,0 +1,35 @@
+/* About Section */
+
+.about {
+  background-color: $bgColor;
+  padding: $stdPadding;
+
+  & .wrapper {
+    @include wrapper();
+  }
+
+  &__text {
+    @include sectionText();
+
+    p {
+      @include sectionTextParagraph();
+    }
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 33.25%;
+  overflow: hidden;
+  align-self: center;
+  flex: 2 0 55%;
+  margin: 1.4em 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,19 @@
+$stdPadding: 20px;
+$bgColor: #97d279;
+
+@mixin wrapper($wrap: nowrap) {
+  display: flex;
+  flex-wrap: $wrap;
+}
+
+@mixin sectionText($width: 700px, $align: center, $padding: $stdPadding) {
+  max-width: $width;
+  text-align: $align;
+  padding: $padding;
+}
+
+@mixin sectionTextParagraph($align: justify, $padding: $stdPadding, $line-height: 1.4em) {
+  text-align: $align;
+  padding: $padding;
+  line-height: $line-height;
+}

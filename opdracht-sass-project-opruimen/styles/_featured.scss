@@ -1,0 +1,20 @@
+/* Featured Section */
+.featured {
+  padding: $stdPadding;
+
+  & .wrapper {
+    @include wrapper(wrap);
+  }
+
+  &__image img {
+    width: 300px;
+  }
+
+  &__text {
+    @include sectionText();
+
+    p {
+      @include sectionTextParagraph();
+    }
+  }
+}
